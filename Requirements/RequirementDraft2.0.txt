@@ -1,0 +1,9 @@
+1.Login and Register--(lokesh)
+2.Dashboard(charts)--(kalyan)
+3.Income/expense(crud application)--(asma)
+4.Profile Details with edit option
+5.Categorizing credit/debit transactions into income/expense(Based on transaction Statement)-(rahul)
+
+total income
+total expense
+savings

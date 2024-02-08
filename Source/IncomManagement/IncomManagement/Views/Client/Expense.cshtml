@@ -1,0 +1,94 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+  <head>
+  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: lightblue;
+      }
+
+   
+      
+    </style>
+  </head>
+  <body>
+         
+
+      <form
+        class="row g-3 text-center align-items"
+        id="gradient-custom"
+        action="/Expense/Insert"
+        method="post"
+      >
+        <div class="container py-5 h-100">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-light text-black" style="border-radius: 1rem">
+                <div class="card-body p-5 text-center">
+                  <div class="mb-md-5 mt-md-4 pb-5">
+                    <h2
+                      class="fw-bold mb-2 text-uppercase"
+                      style="padding-bottom: 10px"
+                    >
+                      EXPENSE DETAILS
+                    </h2>
+                <div class="form-row">
+                  <div class="form-control">
+                    <label>Expense Name</label>
+                    <input
+                      type="text"
+                      id="ExpenseName"
+                      name="ExpenseName"
+                      class="form-control form-control-lg"
+                    />
+                  </div>
+                  <br />
+                </div>
+                <br />
+                <div>
+                  <label>Expense Amount</label><br />
+                  <input
+                    type="text"
+                    id="ExpenseAmount"
+                    name="ExpenseAmount"
+                    class="form-control"
+                  />
+                </div>
+                <br />
+                <div>
+                  <div>
+                    <label>Expense Date</label><br />
+                    <input
+                      type="date" width="50%"
+                      id="ExpenseDate"
+                      name="ExpenseDate"
+                      class="form-control"
+                    />
+                  </div>
+                  <br />
+
+                  <input type="submit" value="Submit" />
+
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+    
+      </form>
+ 
+    
+    <br />
+  </body>
+

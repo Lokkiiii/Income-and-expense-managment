@@ -1,0 +1,80 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using ExpenseManagement.DataAccess.Models;
+@model List<Income>;
+@{  <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+</style>
+    
+    <h1>YOUR Incomes</h1>
+       <form method="get" action="/Income/Search">
+<p>
+<input type="search" placeholder="Enter income name" value="@ViewData["Getincomedetails"]" name="searching" style="width:500px;" />
+<input type="submit" value ="Search" class="btn btn-primary"/>
+
+
+</p>
+
+</form>
+    @if (Model != null)
+    {
+        <table style="width:100%">
+            <tr>
+                <th>Income Name</th>
+                <th>Income Amount</th>
+                <th>Income Date</th>
+
+            </tr>
+            @foreach (Income income in Model)
+            {
+                <tr>
+                    <td>
+                        @income.IncomeName
+                    </td>
+
+                    <td>
+                        @income.IncomeAmount
+                    </td>
+                    <td>
+                        @income.IncomeDate
+                    </td>
+
+
+                </tr>
+            }
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+    }
+    <form action="/Client/Income">
+
+           <div class="field btn">
+              
+                   
+                     <input type="submit" value="Back">
+                  </div>
+          </form>
+    
+
+}

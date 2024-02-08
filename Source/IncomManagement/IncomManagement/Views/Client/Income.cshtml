@@ -1,0 +1,102 @@
+﻿
+
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+        background-color:lightgreen;
+        
+         
+    }
+    .head-wrapper {
+        display: flex;
+        justify-content: space-between  
+    }
+
+
+    .btns-wrapper {
+        display: flex;  
+    }
+
+    .form-wrapper {
+        width: 50%;
+    margin: 50px auto;
+    }
+</style>
+</head>
+<body>
+
+<div class="head-wrapper">
+    <h2>Income and Expense Details</h2>
+    <div class="btns-wrapper">
+         <form action="/Expense/Index" class="login">
+              <div class="field btn exp-btn">
+                    <button class="btn btn-danger">Add Expenses</button>
+                       </div>
+     
+     </form> 
+         <form action="/Expense/List" class="login">
+              <div class="field btn exp-btn">
+                    <button class="btn btn-primary">Your Expenses</button>
+                       </div>
+     
+     </form>  
+        <form action="/Income/List" class="login">
+              <div class="field btn exp-btn">
+                    <button class="btn btn-success">Your Incomes</button>
+                       </div>
+     
+     </form>  
+       
+      
+    </div>
+</div>
+<div class="wrapper">
+     
+</div>
+<form action="/Income/Insert" method="post" class="form-wrapper">
+  <div class="form-row">
+    <div class="form-control">
+    <label>Income Name</label>
+      <input type="text" id="IncomeName" name="IncomeName" class="form-control" >
+    </div><br>
+  
+    </div><br>
+    <div>
+    <label>Income Amount</label><br>
+    <input type="text" id="IncomeAmount" name="IncomeAmount" class="form-control" >
+    </div><br>
+     <div>
+   
+    <div>
+    <label>Income Date</label><br>
+    <input type="date" id="IncomeDate" name="IncomeDate"class="form-control" >
+     </div><br>
+     
+     <input type="submit" value="Submit">
+     
+     <br />
+      <form action="/Project/Expense" class="login"></form>
+
+    
+</form>
+<br />
+ 
+
+
+  
+
+</body>
+</html>
+
+
+
